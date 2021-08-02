@@ -1,0 +1,93 @@
+Github Commands
+
+
+
+Git init
+
+Git add .
+
+git commit -m “ message “
+
+Git push origin master
+
+Git branch 
+
+Git checkout <branch>
+
+Git stash
+
+Git branch -f master HEAD~3
+
+Git cherry-pick <commit1> <commit2>
+
+git config --global user.name <username>
+
+git config --global user.email <email>
+
+git push origin HEAD:refs/for/master     # for pushing in vista Gerrit repo
+
+Git checkout -b <branchname>.  # to create a new branch as well as checking it out
+
+git checkout -b <new-branch> <existing-branch> # creates a new branch from the existing-branch
+
+
+
+
+
+
+
+
+
+PREVIOUS WORK
+
+
+
+ git clone <url>
+
+ Ls -a
+
+Touch readme.md
+
+Git add readme.md
+
+Git status
+
+Git commit -m “ commit message “
+
+git config --global user.email "ruchinagarwal674@gmail.com" 
+
+git config --global user.name  “ruchin98” 
+
+Git push < branch name>
+
+Git branch.  # shows the current branches
+
+git checkout -b name_of_branch origin/master #creates a local branch
+
+Git branch -b <branchname>. # creates a branch of name xyzzy
+
+Git checkout <branchname>. # header moves to the branch
+
+Git push origin firstbranch.      # pushes into the branch with name firstbranch
+
+Git checkout master
+
+Git merge firstbranch master
+
+git reset --hard 1e4cab    # removes the commits before commit of hash id 1e4cab
+
+Git rebase firstebranch master
+
+ git branch -D firstbranch     # deletes the branch “firstbrnch”
+
+Git stash “my first cut”. # undo the change you did in you repository before pushing 
+
+Git stash save “my first cut”
+
+Git stash apply
+
+Git stash show
+
+Git stash list
+
+

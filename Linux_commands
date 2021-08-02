@@ -1,0 +1,4 @@
+lsof -i tcp:3307   ( finds the PID of process running port 3307 }
+ssh -fnNT bastion-host-mongo-forward
+kill -9 <PID>
+
