@@ -1,0 +1,30 @@
+--------Some Useful Links------------
+
+https://www.knowledgenile.com/blogs/pros-and-cons-of-mongodb/
+https://docs.mongodb.com/manual/core/transactions/#:~:text=In%20version%204.0%2C%20MongoDB%20supports,document%20transactions%20on%20replica%20sets.
+
+------------------MongoDB------Up's:
+
+NoSQL - supports BSON(JSON) docs. If you deal with a lot of textual data and output in the form of JSON, Yes It is for you
+Schema-less: eg. We crawl multiple different websites and parse the data to JSON. Every website will give different information(fields) compared to others. Schema-less helps to store in a hassle free
+Insert and update extreme fast (Daily millions of data changes)
+Easy Installation, Replication(replica sets) and scaling (sharding)
+
+-----------------MongoDB------Down’s
+
+Single Master Architecture: The write can happen over only one node, however, the read can happen in multiple slaves
+Parent Organisation of MongoDB is not open source
+Stability and Crashing: When I started using ,very often we will have server crash however in the recent upgrades We haven’t felt.
+Aggregation is a memory consuming operation
+Initially, MongoDB Query language will be difficult
+Recently, MongoDB introduced ACID compliant DB in its v4.0
+
+
+----MongoDB-------Version 4.0 upwards-------------------------------------------------------------------------
+
+. In version 4.0, MongoDB supports multi-document transactions on replica sets.
+. In version 4.2, MongoDB introduces distributed transactions, which adds support for multi-document transactions on sharded clusters and incorporates the existing support for multi-document transactions on replica sets.
+
+NOTE: To use transactions on MongoDB 4.2 deployments (replica sets and sharded clusters), clients must use MongoDB drivers updated for MongoDB 4.2.
+
+Starting in MongoDB 4.4 with feature compatibility version (fcv) "4.4", you can create collections and indexes inside a multi-document transaction unless the transaction is a cross-shard write transaction. With "4.2" or less, operations that affect the database catalog, such as creating or dropping a collection or an index, are disallowed in transactions.
